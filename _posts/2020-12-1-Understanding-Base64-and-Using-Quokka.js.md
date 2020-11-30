@@ -18,7 +18,7 @@ In simple terms, Base64 is a method of representing numbers between 0 and 255 (8
 ### Understand Quokka.js
 Quokka.js is a plugin available for several code editors that enables fast prototyping and testing directly _in_ a text editor. The best feature I believe is having console output and results from variable manipulation shown inline with the subsequent code, allowing for minimal context switching and creating a great playground for developing and learning in the editor. Quokka will enable us to learn how to implement Base64 encoding and iterate on our routine all within the editor and with immediate feedback.
 
-![Screen_Recording_2020-12-01_at_08.09.59.gif](Screen_Recording_2020-12-01_at_08.09.59.gif)
+![Screen_Recording_2020-12-01_at_08.09.59.gif](images/Screen_Recording_2020-12-01_at_08.09.59.gif)
 
 ### Understanding Digital Text
 To test our encoding we will encode a simple sentence of words. While this isn't the typical use of Base64 as the sentence can _already_ be transmitted via email, HTML and the rest, it will provide us with a simple dataset for testing purposes. Rather than seeing words and letters, see them as numbers. In ASCII and UTF-8, the methods of displaying text most software uses, the uppercase alphabet A through Z is stored digitally as the decimal values 65 through 90, and the lowercase alphabet as values 97 through 122. For example, the word 'Man' would be 77(M), 97(a) and 110(n).
