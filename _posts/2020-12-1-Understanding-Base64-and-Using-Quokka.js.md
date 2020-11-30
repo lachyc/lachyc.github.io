@@ -18,7 +18,7 @@ In simple terms, Base64 is a method of representing numbers between 0 and 255 (8
 ### Understand Quokka.js
 Quokka.js is a plugin available for several code editors that enables fast prototyping and testing directly _in_ a text editor. The best feature I believe is having console output and results from variable manipulation shown inline with the subsequent code, allowing for minimal context switching and creating a great playground for developing and learning in the editor. Quokka will enable us to learn how to implement Base64 encoding and iterate on our routine all within the editor and with immediate feedback.
 
-![[Screen_Recording_2020-12-01_at_08.09.59.gif]]
+![Screen_Recording_2020-12-01_at_08.09.59.gif](Screen_Recording_2020-12-01_at_08.09.59.gif)
 
 ### Understanding Digital Text
 To test our encoding we will encode a simple sentence of words. While this isn't the typical use of Base64 as the sentence can _already_ be transmitted via email, HTML and the rest, it will provide us with a simple dataset for testing purposes. Rather than seeing words and letters, see them as numbers. In ASCII and UTF-8, the methods of displaying text most software uses, the uppercase alphabet A through Z is stored digitally as the decimal values 65 through 90, and the lowercase alphabet as values 97 through 122. For example, the word 'Man' would be 77(M), 97(a) and 110(n).
@@ -157,7 +157,7 @@ while(encodedString.length % 4)encodedString += '=';
 This simply ensures that the length of the final string is a multiple of four. This is not _required_ to perform decoding successfully later on but _is_ helpful in some situations. To understand further, read [this great answer by TJM on StackOverflow](https://stackoverflow.com/a/26632221).
 
 The beauty of using Quokka.js with this program is that we can see every step of the encoding practice live simply by changing the initial string to encode.
-![[Screen_Recording_2020-12-01_at_08.53.22.gif]]
+![Screen_Recording_2020-12-01_at_08.53.22.gif](images/Screen_Recording_2020-12-01_at_08.53.22.gif)
 ### Conclusion
 Hopefully this has demystified some of the why's and how's about encoding data with the basic format that is Base64. The important thing is to know that many existing digital systems, interfaces and processes are based on those that came before them. The applications for Base64 may not be obvious in 2020, especially if we were to design a new encoding or transmission for binary data, but know that it is widely adopted, easily implemented and has stood the test of time.
 
