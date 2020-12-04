@@ -164,7 +164,7 @@ while(encodedString.length % 4)encodedString += '=';
 This simply ensures that the length of the final string is a multiple of four. This is not _required_ to perform decoding successfully later on but _is_ helpful in some situations. To understand further, read [this great answer by TJM on StackOverflow](https://stackoverflow.com/a/26632221).
 
 The beauty of using Quokka.js with this program is that we can see every step of the encoding practice live simply by changing the initial string to encode.
-![quokka2.gif](quokka2.gif)
+![quokka2.gif](../images/quokka2.gif)
 
 ### Conclusion
 Hopefully this has demystified some of the why's and how's about encoding data with the basic format that is Base64. It may seem like a function with few applications but, while transmitting of binary data can seem quite easy these days, Base64 is widely adopted, easily implemented and has stood the test of time. 
